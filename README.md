@@ -1,4 +1,4 @@
-# uber-gcp-data-engineering
+# Uber-gcp-data-engineering
 
 Certainly. Below is the complete, high-level Technical Case Study & Portfolio Write-up formatted in plain text. You can copy and paste this directly into your GitHub README.md or your portfolio website.
 
