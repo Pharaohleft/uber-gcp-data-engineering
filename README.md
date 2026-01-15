@@ -1,16 +1,16 @@
-# 🚕 Project: Uber Data Intelligence Engine (Scale: 100M+ Records)
+#  Project: Uber Data Intelligence Engine (Scale: 100M+ Records)
 ### **Enterprise ELT Pipeline & High-Performance Dimensional Modeling on GCP**
 
 ---
 
-## 💎 1. PROJECT STRATEGY & MISSION
+##  1. PROJECT STRATEGY & MISSION
 In modern data organizations, raw data is an expensive liability until it is structured for performance. This project was initiated to solve the **"Flat-File Scalability Wall"** associated with a massive 100-million-row Uber trip dataset. 
 
 The mission was to move beyond simple data movement and engineer a **Medallion Architecture** on **Google Cloud Platform (GCP)**. By migrating 100M records from a monolithic BigQuery table into a sharded, columnar Data Lake and eventually into a Star Schema, I successfully reduced the computational footprint and query costs by over 60%.
 
 ---
 
-## 🛠 2. THE TECH STACK (ENTERPRISE GRADE)
+##  2. THE TECH STACK (ENTERPRISE GRADE)
 * **Orchestration:** `Mage AI` (Python-based block orchestration for modular data movement).
 * **Data Lake (Bronze):** `Google Cloud Storage (GCS)` utilizing `Apache Parquet` for columnar serialization.
 * **Data Warehouse (Silver/Gold):** `Google BigQuery` (Serverless compute for high-volume SQL transformations).
@@ -19,7 +19,7 @@ The mission was to move beyond simple data movement and engineer a **Medallion A
 
 ---
 
-## 🏗 3. DETAILED ARCHITECTURAL WORKFLOW
+##  3. DETAILED ARCHITECTURAL WORKFLOW
 
 
 
@@ -47,7 +47,7 @@ I "shattered" the flat 100M-row monolith into a highly-indexed **Star Schema**.
 
 ---
 
-## 📉 4. PERFORMANCE & BUSINESS IMPACT (ROI)
+## 4. PERFORMANCE & BUSINESS IMPACT (ROI)
 Data Engineering value is measured in **Operational Expenditure (OpEx)** reduction. By moving to this architecture, I delivered:
 
 1.  **Cost Mitigation:** BigQuery costs are driven by data scanned. By querying specific dimensions instead of the 100M-row flat table, the system scans ~60% less data per query.
@@ -56,7 +56,7 @@ Data Engineering value is measured in **Operational Expenditure (OpEx)** reducti
 
 ---
 
-## ⚠️ 5. THE "ENGINEER'S LOG": TROUBLESHOOTING 100M RECORDS
+##  5. THE "ENGINEER'S LOG": TROUBLESHOOTING 100M RECORDS
 * **Problem:** "Out of Memory" (OOM) errors during Python transformation.
     * **Resolution:** I shifted the transformation logic from the Mage Python runner to BigQuery’s **Serverless SQL engine**, utilizing cloud-native compute to handle the 100M-row JOIN operations.
 * **Problem:** Identity collisions across different vendors.
@@ -66,7 +66,7 @@ Data Engineering value is measured in **Operational Expenditure (OpEx)** reducti
 
 ---
 
-## 🚀 6. ANALYTICAL POTENTIAL
+##  6. ANALYTICAL POTENTIAL
 With this 100M-record foundation, the organization can now perform:
 - **Peak Hour Analysis:** Identifying which specific hours drive the most revenue per mile.
 - **Fraud Detection:** Spotting anomalies in payment types across millions of transactions.
